@@ -1,0 +1,58 @@
+.box {
+  width: 300px;
+  height: 80px;
+  border: 1px solid #daedbd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: bold;
+}
+
+.dent {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #daedbd;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pan {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #daedbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #daedbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .offdent {
+  background-color: white;
+  color: black;
+} */
+
+.ondent {
+  background-color: black;
+  color: white;
+}
+
+.onpan {
+  background-color: black;
+  color: white;
+}
+
+.onchange {
+  background-color: black;
+  color: white;
+}

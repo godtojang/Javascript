@@ -1,0 +1,63 @@
+.box {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box > div > span {
+  color: white;
+}
+
+.box > div > .yellow {
+  color: yellow;
+}
+
+.box > div > .yellow > span {
+  color: white;
+}
+
+i {
+  width: 24px;
+  height: 24px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  margin: 10px;
+}
+
+button {
+  width: 30%;
+  height: 80px;
+  background-color: gray;
+  border-radius: 100px;
+}
+
+.onecheck {
+  background-color: #ebff00;
+  color: black;
+}
+
+.twocheck {
+  background-color: #ebff00;
+  color: black;
+}
+
+.threecheck {
+  background-color: #ebff00;
+  color: black;
+}
+
+.fourcheck {
+  background-color: #ebff00;
+  color: black;
+}
+
+.onbutton {
+  background-color: #ebff00;
+}
