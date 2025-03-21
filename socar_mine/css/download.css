@@ -1,0 +1,39 @@
+.download {
+  background-color: #00b8ff;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(-30deg) translateX(50px);
+  z-index: 1;
+
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.download > .logo {
+  width: 70px;
+  height: 70px;
+  transform: skew(30deg);
+  position: absolute;
+  border-radius: 20px;
+  top: 15%;
+  left: -5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.download > .logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.download > span {
+  transform: skew(30deg);
+}
