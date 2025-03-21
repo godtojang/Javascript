@@ -5,6 +5,7 @@
   background-color: #f7f8f9;
   position: relative;
   overflow: hidden;
+
 }
 
 .user > .wrap > .contents {
@@ -25,7 +26,10 @@
   width: 30%;
   height: 100%;
   background-color: #0bb8ff;
-  transform: skew(-30deg) translateX(1450px);
+  transform: skew(-30deg) translateX(500px);
   position: absolute;
   top: 0px;
+  right: -10%;
+  transition: all 1s;
 }
+

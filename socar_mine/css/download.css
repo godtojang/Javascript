@@ -8,12 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: skew(-30deg) translateX(50px);
-  z-index: 1;
-
+  transform: skew(-30deg) translateX(5000px);
   position: fixed;
   bottom: 0px;
   right: 0px;
+  z-index: 1;
+
+  animation-name: leftMove;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .download > .logo {
@@ -36,4 +40,26 @@
 
 .download > span {
   transform: skew(30deg);
+  animation-name: app;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes app {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leftMove {
+  0% {
+    transform: skew(-30deg) translateX(500px);
+  }
+  100% {
+    transform: skew(-30deg) translateX(50px);
+  }
 }

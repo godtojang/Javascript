@@ -28,3 +28,42 @@ hambuger.addEventListener("click", () => {
   upbar.classList.toggle("upbarX");
   downbar.classList.toggle("downbarX");
 });
+
+window.addEventListener("wheel", (e) => {
+  console.log(e.deltaY);
+  if (e.deltaY == 100) {
+    header.classList.add("scrollHeader");
+  } else {
+    header.classList.remove("scrollHeader");
+  }
+});
+
+const a = document.querySelectorAll(".info > h2");
+const b = document.querySelectorAll(".info > p");
+const c = document.querySelectorAll(".show > img");
+
+const ob = new IntersectionObserver((x) => {
+  x.forEach((y) => {
+    if (y.isIntersecting) {
+      y.target.style.opacity = "1";
+      y.target.style.transform = "translateX(0px)";
+    }
+  });
+});
+
+a.forEach((v) => ob.observe(v));
+b.forEach((v) => ob.observe(v));
+c.forEach((v) => ob.observe(v));
+
+const d = document.querySelector(".contents");
+const blue = document.querySelector(".blue");
+
+const openBlue = new IntersectionObserver((x) => {
+  x.forEach((y) => {
+    if (y.isIntersecting) {
+      blue.style.transform = "skew(-30deg) translateX(0px);";
+    }
+  });
+});
+
+openBlue.observe(d);

@@ -58,3 +58,7 @@ header > .hamburger .downbarX {
   transform: rotate(45deg);
   left: 0px;
 }
+
+.scrollHeader {
+  transform: translateY(-80px);
+}
